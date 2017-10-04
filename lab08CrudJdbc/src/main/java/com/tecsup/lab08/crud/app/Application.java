@@ -13,31 +13,31 @@ public class Application {
 		
 		int id = -1;
 	
-		id = dao.create("Eleen", "Aquino", (double) 1500);
+		id = dao.create("Eleen", "Aquino", (double) 1500, 15);
 		
 		Employee emp = dao.findById(id);
 		
 		System.out.println("Create .. " + emp);
 
-		dao.update(id, "Stefanny", "AquinoG", (double) 1505);
+		dao.update(id, "Stefanny", "AquinoG", (double) 1600, 16);
 	
 		emp = dao.findById(id);
 		
 		System.out.println("Update .. " + emp);
-				
+		/*		
 		dao.delete(id);
 
 		emp = dao.findById(id);
 
 		System.out.println("Delete .. " + emp);		
 		
-		
-		for (Employee item : dao.findAll()) {
+		*/
+	/*	for (Employee item : dao.findAll()) {
 			
 			System.out.println(item);
 			 
 		};
-		
+		*/
 	}
 
 }

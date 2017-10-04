@@ -23,8 +23,9 @@ public interface EmployeeDAO {
 	 * @param pFirstname
 	 * @param pLastname
 	 * @param pSalary
+	 * @param pEdad
 	 */
-	int create(String pFirstname, String pLastname, Double pSalary);
+	int create(String pFirstname, String pLastname, Double pSalary, int pEdad);
 
 	/**
 	 * 
@@ -38,8 +39,9 @@ public interface EmployeeDAO {
 	 * @param pFirstname
 	 * @param pLastname
 	 * @param pSalary
+	 * @param pEdad
 	 */
-	void update(int id, String pFirstname, String pLastname, Double pSalary);
+	void update(int id, String pFirstname, String pLastname, Double pSalary, int pEdad);
 
 } 
 
